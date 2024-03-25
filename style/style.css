@@ -8,6 +8,7 @@
 
 .container {
     width: 100%;
+    padding: 3rem 2rem;
 }
 
 a {
@@ -78,21 +79,30 @@ img {
     width: 100%;
 }
 
+.violet {
+    background-color: #9792e4;
+}
+
 /************************************ Header style ****************************/
-.header {
+header {
     width: 100%;
     background-color: #0084fd;
+    position: fixed;
+}
+
+.header {
+    width: 100%;
     color: white;
     padding: 1rem 2rem;
     font-size: 30px;
-    position: fixed;
     align-items: center;
 }
 
 /*********************************** Main style ******************************/
 /********* info section ********/
+
 .info {
-    padding: 8rem 2rem 3rem;
+    padding-top: 8rem;
 }
 
 .info h1 {
@@ -129,11 +139,6 @@ img {
 }
 
 /********* strategic section ********/
-.strategic {
-    padding: 3rem 2rem;
-    background-color: #9792e4;
-}
-
 .strategic div:first-child img {
     width: 100%;
 }
@@ -166,10 +171,6 @@ img {
 }
 
 /********* testimonial section ********/
-.testimonial {
-    padding: 3rem 2rem;
-}
-
 .testimonial .card {
     background-color: #9792e4;
     color: white;
@@ -210,11 +211,6 @@ img {
 }
 
 /********* benefit section ********/
-.benefit {
-    padding: 3rem 2rem;
-    background-color: #9792e4;
-}
-
 .benefit h1 {
     color: white;
 }
@@ -241,10 +237,6 @@ img {
 }
 
 /********* about section ********/
-.about {
-    padding: 3rem 2rem;
-}
-
 .about-img {
     position: relative;
     align-self: center;
@@ -280,8 +272,6 @@ img {
 
 /********* start section ********/
 .start {
-    padding: 3rem 2rem;
-    background-color: #9792e4;
     color: white;
     text-align: center;
 }
@@ -326,14 +316,17 @@ h3 {
     .info {
         flex-direction: row;
         flex-wrap: wrap;
+        gap: 0;
+        justify-content: space-between;
     }
 
     .info .card {
         width: 30%;
+        margin-bottom: 2rem;
     }
 
     .info .double-size {
-        width: calc(60% + 2rem);
+        width: calc(60% + (10% / 2));
     }
 
     .info img {
@@ -382,6 +375,7 @@ h3 {
 }
 
 @media screen and (min-width: 1250px) {
+
     .container {
         width: 1250px;
         margin: 0 auto;
