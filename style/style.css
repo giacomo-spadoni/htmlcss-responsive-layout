@@ -60,7 +60,7 @@ img {
     align-self: center;
 }
 
-/***** Header style *****/
+/************************************ Header style ****************************/
 .header {
     background-color: #0084fd;
     color: white;
@@ -68,7 +68,7 @@ img {
     font-size: 30px;
 }
 
-/***** Main style *****/
+/*********************************** Main style ******************************/
 /********* info section ********/
 .info {
     padding: 3rem 2rem;
@@ -250,4 +250,17 @@ h3 {
 }
 
 /************************** Footer style ***************************/
+.footer {
+    padding: 3rem 2rem;
+    background-color: #333333;
+    color: white;
+    gap: 5rem;
+    text-align: center;
+}
+
+.legal-footer a {
+    color: #9792e4;
+    text-decoration: underline;
+}
+
 /************************** Queryes style ***************************/
