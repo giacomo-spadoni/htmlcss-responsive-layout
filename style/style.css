@@ -31,6 +31,10 @@ a {
     flex-direction: column;
 }
 
+.center {
+    align-self: center;
+}
+
 .gap {
     gap: 2rem;
 }
@@ -67,6 +71,7 @@ h2 {
 img {
     align-self: center;
     display: block;
+    width: 100%;
 }
 
 /************************************ Header style ****************************/
@@ -164,8 +169,34 @@ img {
     color: white;
 }
 
-.testimonial img {
+.testimonial-img1 {
+    align-self: center;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
+    background-image: url(../img/testimonial1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial-img2 {
+    align-self: center;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url(../img/testimonial2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.testimonial-img3 {
+    align-self: center;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url(../img/testimonial3.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .testimonial i {
@@ -208,9 +239,15 @@ img {
     padding: 3rem 2rem;
 }
 
-.img-quatermark {
-    width: 60%;
+.about-img {
     position: relative;
+    align-self: center;
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    background-image: url(../img/about.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 .quatermark {
@@ -218,11 +255,6 @@ img {
     position: absolute;
     right: 0;
     top: 0;
-}
-
-.img-quatermark img {
-    border-radius: 50%;
-    width: 100%;
 }
 
 .about h1,
@@ -339,10 +371,6 @@ h3 {
     }
 
     .img-quatermark {
-        width: 100%;
-    }
-
-    .img-quatermark img {
         width: 100%;
     }
 }
