@@ -6,6 +6,10 @@
     font-family: "Comfortaa", sans-serif;
 }
 
+.container {
+    width: 100%;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -17,6 +21,10 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
 }
 
 .column {
@@ -58,10 +66,12 @@ h2 {
 
 img {
     align-self: center;
+    display: block;
 }
 
 /************************************ Header style ****************************/
 .header {
+    width: 100%;
     background-color: #0084fd;
     color: white;
     padding: 1rem 2rem;
@@ -91,6 +101,7 @@ img {
 .info a {
     background-color: #0084fd;
     color: white;
+    align-self: flex-start;
 }
 
 /* card double-sized */
@@ -112,11 +123,11 @@ img {
     background-color: #9792e4;
 }
 
-.strategic>img {
+.strategic div:first-child img {
     width: 100%;
 }
 
-.strategic>p,
+.strategic div:first-child p,
 .strategic h1 {
     color: white;
     align-self: flex-start;
@@ -137,6 +148,10 @@ img {
 
 .strategic .card {
     background-color: white;
+}
+
+.strategic .card img {
+    width: 100%;
 }
 
 /********* testimonial section ********/
@@ -222,10 +237,10 @@ img {
 .about a i {
     background-color: #9792e4;
     color: white;
-    align-self: baseline;
+    align-self: flex-start;
 }
 
-/********* about section ********/
+/********* start section ********/
 .start {
     padding: 3rem 2rem;
     background-color: #9792e4;
@@ -269,3 +284,111 @@ h3 {
 }
 
 /************************** Queryes style ***************************/
+@media screen and (min-width: 705px) {
+    .info {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info .card {
+        width: 30%;
+    }
+
+    .info .double-size {
+        width: calc(60% + 2rem);
+    }
+
+    .info img {
+        margin-left: 1rem;
+        align-self: flex-start;
+    }
+
+    .testimonial .card {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .benefit {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .benefit h1 {
+        width: 100%;
+    }
+
+    .benefit .card {
+        width: 45%;
+    }
+
+    .about {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .img-quatermark {
+        width: 30%;
+    }
+
+    .first {
+        width: 70%;
+    }
+
+    .second {
+        width: 30%;
+    }
+
+    .img-quatermark {
+        width: 100%;
+    }
+
+    .img-quatermark img {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .container {
+        width: 1250px;
+        margin: 0 auto;
+    }
+
+    .double-size {
+        flex-direction: row;
+    }
+
+    .double-size div {
+        width: 50%;
+    }
+
+    .double-size div:first-child {
+        align-self: flex-start;
+    }
+
+    .double-size div:last-child {
+        align-self: flex-end;
+        justify-content: center;
+    }
+
+    .strategic {
+        flex-direction: row;
+    }
+
+    .strategic div {
+        width: 50%;
+    }
+
+    .strategic div:first-child {
+        align-self: flex-start;
+    }
+
+    .strategic div:last-child {
+        margin-top: 10rem;
+        align-self: flex-end;
+        justify-content: center;
+    }
+
+    .benefit .card {
+        width: 30%;
+    }
+}
