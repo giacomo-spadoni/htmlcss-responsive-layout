@@ -35,6 +35,10 @@ a {
     align-self: center;
 }
 
+.shrink {
+    flex-shrink: 999;
+}
+
 .gap {
     gap: 2rem;
 }
@@ -81,12 +85,14 @@ img {
     color: white;
     padding: 1rem 2rem;
     font-size: 30px;
+    position: fixed;
+    align-items: center;
 }
 
 /*********************************** Main style ******************************/
 /********* info section ********/
 .info {
-    padding: 3rem 2rem;
+    padding: 8rem 2rem 3rem;
 }
 
 .info h1 {
