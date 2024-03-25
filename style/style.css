@@ -8,7 +8,7 @@
 
 .container {
     width: 100%;
-    padding: 3rem 2rem;
+    padding: 5rem 2rem 3rem;
 }
 
 a {
@@ -83,6 +83,10 @@ img {
     background-color: #9792e4;
 }
 
+label {
+    cursor: pointer;
+}
+
 /************************************ Header style ****************************/
 header {
     width: 100%;
@@ -93,9 +97,54 @@ header {
 .header {
     width: 100%;
     color: white;
+    background-color: #0084fd;
     padding: 1rem 2rem;
     font-size: 30px;
     align-items: center;
+}
+
+#sburger {
+    width: 100%;
+    background-color: #0083fdd6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    z-index: -1;
+    top: -250%;
+    left: 0;
+    border-radius: 0 0 1rem 1rem;
+    transition: 2s;
+}
+
+#sburger a {
+    padding-top: 1rem;
+}
+
+#test:checked+label i {
+    color: #4c4974;
+}
+
+#test:checked+label+#sburger {
+    top: 100%;
+}
+
+#no-burger {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+    font-size: 15px;
+}
+
+#sburger a,
+#no-burger a {
+    color: white;
+}
+
+#no-burger .btn {
+    color: black;
+    background-color: white;
+    padding: 0.5rem 1rem;
 }
 
 /*********************************** Main style ******************************/
@@ -246,6 +295,7 @@ header {
     background-image: url(../img/about.jpg);
     background-size: cover;
     background-position: center;
+    z-index: -2;
 }
 
 .quatermark {
@@ -375,6 +425,14 @@ h3 {
 }
 
 @media screen and (min-width: 1250px) {
+
+    #no-burger {
+        display: flex;
+    }
+
+    #burger {
+        display: none;
+    }
 
     .container {
         width: 1250px;

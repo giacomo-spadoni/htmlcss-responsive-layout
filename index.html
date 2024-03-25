@@ -19,13 +19,32 @@
     <header>
         <section class="header container flex space-between">
             <div class="logo"><img src="./img/logo.png" alt=""></div>
-            <div class="burger"><i class="fa-solid fa-bars"></i></div>
+            <div class="flex">
+                <input type="checkbox" id="test" hidden>
+                <label for="test">
+                    <div id="burger"><i class="fa-solid fa-bars"></i></div>
+                </label>
+                <div id="sburger">
+                    <a href="#info">Planning</a>
+                    <a href="#testimonial">Testimonials</a>
+                    <a href="#benefit">Features</a>
+                    <a href="#about">About Us</a>
+                    <a href="#start">Get Started</a>
+                </div>
+                <div id="no-burger">
+                    <a href="#info">Planning</a>
+                    <a href="#testimonial">Testimonials</a>
+                    <a href="#benefit">Features</a>
+                    <a href="#about">About Us</a>
+                    <a class="btn" href="#start">Get Started</a>
+                </div>
+            </div>
         </section>
     </header>
     <!-- Main content -->
     <main>
         <!-- info section -->
-        <section class="info container flex column gap">
+        <section class="info container flex column gap" id="info">
             <div class="card double-size">
                 <div class="flex column gap">
                     <h1>Get a demo application</h1>
@@ -72,7 +91,7 @@
             </div>
         </section>
         <!-- strategy section -->
-        <section class="violet">
+        <section class="violet" id="strategy">
             <div class="strategic container flex column gap">
                 <div class="flex column gap">
                     <img src="./img/planning1.png" alt="">
@@ -96,7 +115,7 @@
             </div>
         </section>
         <!-- testimonial section -->
-        <section class="testimonial container flex column gap">
+        <section class="testimonial container flex column gap" id="testimonial">
             <h2>TESTIMONIAL</h2>
             <h1>We are committed expert partners</h1>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, impedit ut. Veritatis sequi qui
@@ -145,7 +164,7 @@
             </div>
         </section>
         <!-- benefit section -->
-        <section class="violet">
+        <section class="violet" id="benefit">
             <div class="benefit container flex column space-evenly gap">
                 <h1>Benefits of working with us</h1>
                 <div class="card">
@@ -205,7 +224,7 @@
             </div>
         </section>
         <!-- about section -->
-        <section class="about container flex column gap">
+        <section class="about container flex column gap" id="about">
             <div class="first flex column gap">
                 <h1>About Us</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid esse quos rem aperiam, temporibus
@@ -228,7 +247,6 @@
                             <i class="fa-solid fa-quote-left"></i>
                         </div>
                     </div>
-
                 </div>
                 <h2>I help companies dolor sit amet consectetur adipisicing.
                 </h2>
@@ -239,7 +257,7 @@
             </div>
         </section>
         <!-- start section -->
-        <section class="violet">
+        <section class="violet" id="start">
             <div class="start container flex column gap">
                 <h2>GET STARTED</h2>
                 <h1>Simple, Transparent Pricing</h1>
