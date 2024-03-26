@@ -376,7 +376,7 @@ h3 {
     }
 
     .info .double-size {
-        width: calc(60% + (10% / 2));
+        width: 65%;
     }
 
     .info img {
