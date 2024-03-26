@@ -11,6 +11,11 @@
     padding: 5rem 2rem 3rem;
 }
 
+.container-footer {
+    width: 100%;
+    padding: 5rem 2rem 3rem;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -160,6 +165,11 @@ header {
 
 .info .card {
     background-color: #b5ddff;
+}
+
+
+.info img {
+    max-height: 380px;
 }
 
 .info .fontawesome {
@@ -349,10 +359,8 @@ h3 {
 
 /************************** Footer style ***************************/
 .footer {
-    padding: 3rem 2rem;
     background-color: #333333;
     color: white;
-    gap: 5rem;
     text-align: center;
 }
 
@@ -363,6 +371,12 @@ h3 {
 
 /************************** Queryes style ***************************/
 @media screen and (min-width: 705px) {
+    .container-footer {
+        width: 800px;
+        padding: 5rem 2rem 3rem;
+        margin: 0 auto;
+    }
+
     .info {
         flex-direction: row;
         flex-wrap: wrap;
@@ -379,8 +393,7 @@ h3 {
         width: 65%;
     }
 
-    .info img {
-        margin-left: 1rem;
+    .info-img {
         align-self: flex-start;
     }
 
